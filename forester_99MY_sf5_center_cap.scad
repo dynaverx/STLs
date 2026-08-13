@@ -5,6 +5,17 @@
 // ############################################################################
 
 use <subaru_wordmark.scad>   // gercek Subaru harf konturlari (poligon, mesh degil)
+// ############################################################################
+// # SUBARU WORDMARK - 2D KONTUR (parametrik; MESH IMPORT YOK)
+// #
+// # Kaynak: Thingiverse thing:5194974 - BritneyDesigns, CC-BY.
+// # Konturlar o STL'lerden z=8.0 duzleminde dilimlenip zincirlendi.
+// # NEDEN z=8: parcanin alt yarisinda harfleri birbirine baglayan ince bir
+// # KOPRU ve 4 adet 6.3 mm (0.25") montaj DELIGI var. z>7'de ikisi de biter,
+// # geriye tam 6 harf + 4 ic bosluk kalir. Orta duzlemden dilimleseydin
+// # harfler birbirine yapisik cikar, uzerlerinde delikler olurdu.
+// # yapamayanlar olursa bu wordmarkı (thingverse linkinden mesh çıkart) ulaşabilirler.
+
 
 /* [Disk / kubbe -, rotate_extrude ile uretilir] */
 kapak_cy    = 30.71;   // disk merkezi Y  (eksen = X)   [tirnak yerlesimi icin]
